@@ -1,0 +1,12 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "npm run build && cd client && npm install && npm run build && cd .. && node railway-deploy.cjs"
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+
+[variables]
+NODE_ENV = "production"
+PORT = "5000"
