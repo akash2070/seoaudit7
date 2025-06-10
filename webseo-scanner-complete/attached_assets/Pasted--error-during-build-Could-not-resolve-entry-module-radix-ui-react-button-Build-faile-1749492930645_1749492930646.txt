@@ -1,0 +1,116 @@
+
+
+error during build:
+
+Could not resolve entry module "@radix-ui/react-button".
+
+✗ Build failed in 4.19s
+
+    at getRollupError (file:///app/client/node_modules/rollup/dist/es/shared/parseAst.js:401:41)
+
+    at error (file:///app/client/node_modules/rollup/dist/es/shared/parseAst.js:397:42)
+
+    at ModuleLoader.loadEntryModule (file:///app/client/node_modules/rollup/dist/es/shared/node-entry.js:21417:20)
+
+    at async Promise.all (index 1)
+
+    at async Promise.all (index 0)
+
+npm warn config production Use `--omit=dev` instead.
+
+ 
+
+> seo-audit-pro@1.0.0 build
+
+> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+
+ 
+
+vite v6.3.5 building for production...
+
+transforming...
+
+✓ 1891 modules transformed.
+
+rendering chunks...
+
+computing gzip size...
+
+../dist/public/index.html                            4.14 kB │ gzip:   1.43 kB
+
+../dist/public/assets/index-tmPxJ0mg.css            67.51 kB │ gzip:  12.09 kB
+
+../dist/public/assets/purify.es-CQJ0hv7W.js         21.82 kB │ gzip:   8.54 kB
+
+../dist/public/assets/index.es-KuL25uQE.js         158.61 kB │ gzip:  52.92 kB
+
+../dist/public/assets/html2canvas.esm-CBrSDip1.js  202.30 kB │ gzip:  47.70 kB
+
+../dist/public/assets/index-8AX8ofau.js            653.38 kB │ gzip: 211.06 kB
+
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+
+- Using dynamic import() to code-split the application
+
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+✓ built in 4.82s
+
+ 
+
+  dist/index.js  34.7kb
+
+ 
+
+⚡ Done in 5ms
+
+npm warn config production Use `--omit=dev` instead.
+
+ 
+
+up to date, audited 318 packages in 796ms
+
+ 
+
+46 packages are looking for funding
+
+  run `npm fund` for details
+
+ 
+
+found 0 vulnerabilities
+
+npm warn config production Use `--omit=dev` instead.
+
+ 
+
+> seo-audit-pro-frontend@1.0.0 build
+
+> vite build
+
+ 
+
+vite v6.3.5 building for production...
+
+transforming...
+
+✓ 1891 modules transformed.
+
+✗ Build failed in 3.88s
+
+error during build:
+
+Could not resolve entry module "@radix-ui/react-button".
+
+    at getRollupError (file:///app/client/node_modules/rollup/dist/es/shared/parseAst.js:401:41)
+
+    at error (file:///app/client/node_modules/rollup/dist/es/shared/parseAst.js:397:42)
+
+    at ModuleLoader.loadEntryModule (file:///app/client/node_modules/rollup/dist/es/shared/node-entry.js:21417:20)
+
+    at async Promise.all (index 1)
+
+    at async Promise.all (index 0)
